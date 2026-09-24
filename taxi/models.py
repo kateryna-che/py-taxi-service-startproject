@@ -16,6 +16,10 @@ class Driver(AbstractUser):
 
     REQUIRED_FIELDS = ["email", "license_number"]
 
+    class Meta:
+        verbose_name = "driver"
+        verbose_name_plural = "drivers"
+
     def __str__(self) -> str:
         return self.username
 
